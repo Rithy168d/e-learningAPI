@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  e-learningapi:
+    image: "postgres:16.3-bullseye"
+    container_name: "e-learningapi"
+    ports:
+      - "1680:5432"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: reachreach
+      POSTGRES_USER: sbc
+      POSTGRES_DB: db_elearning
+
+
+
